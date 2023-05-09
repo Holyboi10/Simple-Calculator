@@ -10,7 +10,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 25vw;
-    height: 50vh;
+    height: 100%;
     gap: 10px;
     margin-top: 10px;
 }
@@ -25,29 +25,33 @@ body{
     align-items: center;
     flex-direction: column;
     height: 40vh;
-    padding-top: 100px;
+    padding-top: 50px;
     width: 50%;
     margin: auto;
     background-color: whitesmoke;
 }
 input{
-    width: 25vw;
+    width: 30vw;
     height: 10vh;
     padding: 20px;
     border-radius: 20px;
-    border: 1px solid gray;
+    border: 2px solid gray;
 }
 button{
     border-radius: 20px;
     height: 8vh;
-    background-color: greenyellow;
+    background-color: black;
+    color: white;
     border: 1px solid gray;
     
 }
 @media (max-width:768px){
     #main{
         width: 80%;
-        height: 100vh;
+        /* height: 100vh; */
+        margin-top: 100px;
+        height: 55vh;
+        border-radius: 25px;
         
     }
     #container{
