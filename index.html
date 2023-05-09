@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div>
+            <input type="text" id="display">
+        </div>
+        <div id="container">
+            <button onclick="btns(7)">7</button>
+            <button onclick="btns(8)">8</button>
+            <button onclick="btns(9)">9</button>
+            <button onclick="btns(`/`)">/</button>
+            <button onclick="btns(4)">4</button>
+            <button onclick="btns(5)">5</button>
+            <button onclick="btns(6)">6</button>
+            <button onclick="btns(`*`)">X</button>
+            <button onclick="btns(1)">1</button>
+            <button onclick="btns(2)">2</button>
+            <button onclick="btns(3)">3</button>
+            <button onclick="btns(`+`)">+</button>
+            <button onclick="clean()">C</button>
+            <button onclick="btns(`.`)">.</button>
+            <button onclick="calculate(`=`)">=</button>
+            <button onclick="btns(`-`)">-</button>
+        
+            </div>
+        
+    </div>
+    
+    
+
+    <script>
+        var display=document.getElementById("display")
+        function btns(x){
+            display.value += x
+        }
+        function calculate(){
+            display.value=eval(display.value)
+        }
+        function clean(){
+            display.value=""
+        }
+    </script>
+
+    
+</body>
+</html>
